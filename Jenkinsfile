@@ -25,5 +25,11 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        sh 'mkdir /home/ubuntu/works '
+      }
+    }
+
   }
 }
