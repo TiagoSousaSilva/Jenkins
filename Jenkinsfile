@@ -25,9 +25,9 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('mkdir') {
       steps {
-        sh 'mkdir /home/ubuntu/works '
+        sh 'sudo mkdir /home/ubuntu/works '
       }
     }
 
