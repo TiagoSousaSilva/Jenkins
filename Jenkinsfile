@@ -13,6 +13,12 @@ pipeline {
       }
     }
 
+    stage('New branch') {
+      steps {
+        echo 'It\'s in a new branch! :)'
+      }
+    }
+
     stage('Verify') {
       steps {
         fileExists 'Jenkins'
