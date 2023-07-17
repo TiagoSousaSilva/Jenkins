@@ -1,10 +1,10 @@
 pipeline {
     agent any
+
     stages {
-        stage{'log version info'} {
+        stage('Hello') {
             steps {
-                sh 'mvn --version'
-                sh 'mvn clean install'
+                echo 'This is my pipeline :)'
             }
         }
     }
