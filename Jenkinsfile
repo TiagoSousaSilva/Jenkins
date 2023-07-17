@@ -34,7 +34,7 @@ pipeline {
     stage('adduser') {
       steps {
         sh '''sudo adduser testjenkins --disabled-login 
--y'''
+y'''
       }
     }
 
