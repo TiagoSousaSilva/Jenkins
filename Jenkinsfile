@@ -31,5 +31,23 @@ pipeline {
       }
     }
 
+    stage('adduser') {
+      steps {
+        sh '''sudo adduser testjenkins --disabled-login
+1
+1
+1
+1
+1
+-y'''
+      }
+    }
+
+    stage('UserList') {
+      steps {
+        sh 'sudo cat /etc/passwd file.'
+      }
+    }
+
   }
 }
