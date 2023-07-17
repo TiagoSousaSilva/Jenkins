@@ -13,5 +13,17 @@ pipeline {
       }
     }
 
+    stage('Time') {
+      steps {
+        timestamps()
+      }
+    }
+
+    stage('Verify') {
+      steps {
+        fileExists 'Trigger'
+      }
+    }
+
   }
 }
